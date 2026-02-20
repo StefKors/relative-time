@@ -1,0 +1,60 @@
+{
+  "name": "@kors/relative-time",
+  "version": "1.0.0",
+  "description": "Relative time formatting utility and auto-updating React component",
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "test": "bun vitest run",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "react",
+    "relative-time",
+    "time",
+    "date",
+    "format",
+    "ago",
+    "component"
+  ],
+  "author": {
+    "name": "Stef Kors",
+    "url": "https://github.com/StefKors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StefKors/relative-time.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "license": "MIT",
+  "packageManager": "bun",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^19.0.0",
+    "jsdom": "^26.0.0",
+    "react": "^19.0.0",
+    "tsdown": "latest",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  }
+}
