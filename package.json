@@ -1,6 +1,6 @@
 {
   "name": "@kors/relative-time",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Relative time formatting utility and auto-updating React component",
   "type": "module",
   "main": "./dist/index.mjs",
